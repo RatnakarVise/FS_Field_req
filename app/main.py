@@ -90,14 +90,13 @@ Your goal is to extract ONLY meaningful business fields involved in data flow.
 DO NOT extract:
 - work areas (WA_…)
 - internal tables (IT_…)
-- local variables(LV_..)
+- temporary variables
 - loop counters
 - substring expressions (MATNR+14(1))
 - SY-* fields (unless used in final business logic)
 - message variables
 - flags (CHECK, CHECK1, FLG, etc.)
 - helper variables (HEADER, MESSAGEPART, etc.)
-- if no field create blank
 
 YOU MUST extract ONLY those fields that:
 1. Come from database SELECT/SELECT SINGLE/FOR ALL ENTRIES
